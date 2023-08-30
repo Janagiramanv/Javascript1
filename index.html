@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <div class="image">
+    
+                 <li><img src="image/ktm rc.png" alt="ktm rc" width="125px" onClick="big('image/ktm rc.png');circle('orange');bg('skyblue');changeText('Accelerate your Throttler &#128526; ')"></li>
+                <li><img src="image/r15 v4.png" alt="R15 v4" width="125px" onClick="big('image/r15 v4.png');circle('pink');bg('lightgreen');changeText('Close Your Eyes &#128524;')"></li>
+                <li><img src="image/royal enfield.png" alt="Royal Enfield" width="125px" onClick="big('image/royal enfield.png');circle('white');bg('gray');changeText('&#129321;And Feel your exhaust sound &#128293;')"></li>
+
+                
+        </div>
+    
+        <div class="circle">
+        </div>
+        <div class="content">
+            <h1 id="textChange">If you can still hear your fears, Shift a gear &#128520;</h1> 
+
+        </div>
+       <div class="big-img">
+            <img src="image/ktm rc.png"width="300px" class="big1">
+                
+        </div> 
+        
+      
+        
+    </div>
+    <script>
+
+function big(img){
+    document.querySelector('.big1').src= img;
+
+}
+function circle(color){
+const circle=document.querySelector('.circle');
+circle.style.background=color;
+}
+function bg(color){
+const circle=document.querySelector('.container');
+circle.style.background=color;
+}
+function changeText(newText){
+    document.querySelector('#textChange').textContent=newText;
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 700px ;
+        width:100%;
+        background-color:goldenrod;
+        animation-name: top;
+        animation-duration: all 2s;
+    }
+    @keyframes top {
+        from{
+           transform: top -100px;
+        }
+        to{
+            margin-top: 0px;
+        }
+        
+    }
+    .container ul{
+    float: right;
+    margin-top: 35px;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color:white;
+        padding:10px 20px;
+        border-radius: 6px;
+        transition-duration:  1s;
+        position: relative;
+        
+
+    }
+    ul li a:hover{
+        
+        background-color: black;
+
+    }
+    a:after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        background-color:white;
+        width: 0;
+        left: 0;
+        bottom: -7px;
+        transition: 1s;
+      
+    }
+    a:hover:after{
+        width: 100%;
+        transition: 1.2s;
+        
+    }
+    ul li{
+        display: inline;
+        list-style-type: none;
+
+        
+    }
+    .image{
+        display: inline-block;
+        position: absolute;
+        margin-left: 20px;
+        z-index: 1;
+        padding: 6px;
+
+    
+    }
+    .image li:hover{
+        transform: translate(20px);
+        cursor: pointer;
+        
+    }
+    .image li{
+
+        position: relative;
+        padding-top: 10px;
+        margin-top: 10px;
+        transition: 2s;
+        list-style-type: none;
+    }
+    .circle{
+        
+        width: 700px;
+        height: 700px;
+        background-color: rgb(226, 49, 123);
+        clip-path: circle(600px at left ) ;
+        z-index: -1;
+        
+        
+
+    }
+    
+    .big-img{
+    position: relative;  
+    width: 400px; 
+    margin-left: 400px;
+    margin-top: -500px;
+    
+    }
+    h1{
+        position: absolute;
+        margin-left: 800px;
+        margin-top: -400px;
+    }
+
+
+
+
+
+
